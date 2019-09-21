@@ -1,0 +1,208 @@
+h1, h2, h3, h4, h5, h6
+  color: $black
+
+p
+  font-size: 0.95rem
+
+i
+  color: $primary
+  padding-right: 1rem 
+
+
+// Section ==================
+.section-head
+  font-size: 2.3rem
+  margin-bottom: 3rem
+
+section
+  padding: 6rem 0
+
+.name
+  font-size: 1.3rem
+
+.date
+  margin-bottom: 1rem
+  font-size: 0.8rem
+
+// Container ==================
+.container
+  padding: 0 $gutter
+  @extend .mx-auto
+  +bp(sm)
+    width: 750px
+  +bp(md)
+    width: 970px
+  +bp(lg)
+    width: 1100px
+
+.row
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  margin-right: -1rem
+  margin-left: -1rem
+
+
+// Columns ==============================================
+.col, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12
+  padding-right: 1rem
+  padding-left: 1rem
+  position: relative
+  
+// for Small/Tablet Breakpoint
+.col-sm-3
+  +bp(sm)
+    flex-basis: $col-3
+.col-sm-4
+  +bp(sm)
+    flex-basis: $col-4
+.col-sm-5
+  +bp(sm)
+    flex-basis: $col-5
+.col-sm-6
+  +bp(sm)
+    flex-basis: $col-6
+.col-sm-7
+  +bp(sm)
+    flex-basis: $col-7
+.col-sm-8
+  +bp(sm)
+    flex-basis: $col-8
+.col-sm-9
+  +bp(sm)
+    flex-basis: $col-9
+.col-sm-10
+  +bp(sm)
+    flex-basis: $col-10
+.col-sm-11
+  +bp(sm)
+    flex-basis: $col-11
+.col-sm-12
+  +bp(sm)
+    flex-basis: $col-12
+
+// for Medium/Desktop Breakpoint
+.col-md-3
+  +bp(md)
+    flex-basis: $col-3
+.col-md-4
+  +bp(md)
+    flex-basis: $col-4
+.col-md-5
+  +bp(md)
+    flex-basis: $col-5
+.col-md-6
+  +bp(md)
+    flex-basis: $col-6
+.col-md-7
+  +bp(md)
+    flex-basis: $col-7
+.col-md-8
+  +bp(md)
+    flex-basis: $col-8
+.col-md-9
+  +bp(md)
+    flex-basis: $col-9
+.col-md-10
+  +bp(md)
+    flex-basis: $col-10
+.col-md-11
+  +bp(md)
+    flex-basis: $col-11
+.col-md-12
+  +bp(md)
+    flex-basis: $col-12
+
+
+// Alignment ==================
+.text-left
+  text-align: left !important
+
+.text-right
+  text-align: right !important
+
+.text-center
+  text-align: center !important
+
+.float-left
+  float: left !important
+
+.float-right
+  float: right !important
+
+.mx-auto
+  margin-left: auto !important
+  margin-right: auto !important
+
+.my-auto
+  margin-top: auto !important
+  margin-bottom: auto !important
+
+.d-block
+  display: block !important
+
+// Margins
+.m-t-1
+  margin-top: 1rem !important
+.m-t-2
+  margin-top: 2rem !important
+.m-t-3
+  margin-top: 3rem !important
+.m-t-4
+  margin-top: 4rem !important
+.m-b-1
+  margin-bottom: 1rem !important
+.m-b-2
+  margin-bottom: 2rem !important
+.m-b-3
+  margin-bottom: 3rem !important
+.m-b-4
+  margin-bottom: 4rem !important
+
+// Paddings
+.pd-tb-0
+  padding-top: 0 !important
+  padding-bottom: 0 !important
+
+.pd-lr-0
+  padding-left: 0 !important
+  padding-right: 0 !important
+
+// List styles ===================
+.list-inline
+
+.list-item
+  display: inline-block
+  padding-right: 2rem
+
+
+// Brand ===================
+.brand-logo
+  color: $white
+  background: $primary
+  padding: 2px 6px
+  margin-right: 2px
+  border-radius: 5px
+
+
+// Blocks ===================
+.block
+  margin-bottom: 3rem
+  background: $off-white
+  border-radius: 10px
+  overflow: hidden
+  .block-info
+    padding: 1rem 2rem
+    .block-info-item
+      padding: 1rem 0
+      &:first-child
+        border-bottom: 1px solid rgba(black, 0.1)
+
+#news
+  .block
+    .block-link
+      .name
+        transition: all 0.3s ease
+        margin-bottom: 0.7rem
+        &:hover
+          color: $primary !important

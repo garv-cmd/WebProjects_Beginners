@@ -1,0 +1,117 @@
+.main-header
+  .top-header
+    font-size: 0.9rem
+    margin: 1rem 0
+    p
+      margin-bottom: 1rem
+
+    +bp(sm)
+      .row
+        flex-direction: row
+
+  .navbar
+    padding: 1rem
+    border-top: 1px solid rgba($black, 0.2)
+    margin-left: -1rem
+    margin-right: -1rem
+    &.fixed 
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      margin-left: 0
+      width: 100%
+      z-index: 999
+      background: $white
+      box-shadow: 0 2px 3px rgba($black, 0.2)
+      +bp(md)
+        padding-left: 30px
+        padding-right: 30px
+
+    .row
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      padding: 0 1rem
+    
+    .navbar-brand
+      font-size: 0.9rem
+
+    .navbar-toggler
+      width: 1.7rem
+      height: 1.3rem
+      cursor: pointer
+      background: none
+      border: none
+      outline: none
+
+      +bp(sm)
+        display: none
+
+      .navbar-toggler-icon
+        border-radius: 3px
+        display: block
+        width: 100%
+        height: 3px
+        background: $base-color
+        position: relative
+        &::before,
+        &::after
+          content: ''
+          position: absolute
+          width: 100%
+          height: 3px
+          background: $base-color
+          left: 0
+
+        &::before
+          top: -8px
+
+        &::after
+          top: 8px
+
+    .navbar-collapse
+      flex-basis: 100%
+      margin-top: 1rem
+      transition: max-height 0.3s linear
+      overflow: hidden
+      display: none
+      &.show
+        display: block
+      li
+        a
+          font-size: 0.9rem
+          display: inline-block
+          color: $base-color
+          padding: 0.5rem 0
+          &:hover, &:focus
+            color: $black
+
+      +bp(sm)
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        flex-basis: 75%
+        margin: 0
+        li
+          display: inline-block
+          margin: 0 1rem
+          +bp(md)
+            margin-left: 1.5rem
+            margin-right: 1.5rem
+          &:last-child
+            display: block
+            margin-left: 1rem
+          a
+            font-size: 0.8rem
+            +bp(md)
+              font-size: 1rem
+        .btn
+          font-size: 0.8rem
+          padding: 0.8rem 0.7rem
+          +bp(md)
+            margin-left: 2rem
+
+
+
+

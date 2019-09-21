@@ -1,0 +1,40 @@
+#showcase
+  background: $bg-overlay, url(../img/slider1.jpg) no-repeat center center
+  background-size: cover
+  height: 100vh
+  position: relative
+  .showcase-wrap
+    +center
+    text-align: center
+    color: $white
+    width: 100%
+    .tagline
+      text-transform: uppercase
+      font-size: 0.7rem
+      font-weight: bold
+      letter-spacing: 1px
+      +bp(xs-l)
+        font-size: 1rem
+        font-weight: normal
+    .showcase-title
+      font-size: 3rem
+      margin-top: -0.8rem
+      margin-bottom: 1rem
+      color: $white
+      +bp(xs-l)
+        font-size: 4rem
+
+  .dots
+    +center(x)
+    bottom: 3rem
+    .dot
+      display: inline-block
+      margin: 5px
+      width: 9px
+      height: 9px
+      border-radius: 50%
+      border: 2px solid rgba(white, 0.5)
+      cursor: pointer
+      transition: all 0.3s ease
+    .dot:hover, .active
+      background: $white
