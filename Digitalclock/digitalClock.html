@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+	#d01
+	{
+		text-align: center;
+		margin-top: 16%;
+		font-size: 150px;
+	}
+</style>
+<body bgcolor="black">
+	<script>
+		setInterval(displaytime,1000);
+		function displaytime()
+		{
+                  var time = new Date();
+                  var hrs = time.getHours();
+                  var min = time.getMinutes();
+                  var sec = time.getSeconds();
+                  if (hrs > 12)
+                  {
+                  	hrs = hrs - 12;
+                  }
+                  if (hrs == 0)
+                  {
+                  	hrs = 12;
+                  }
+                  if (hrs < 12)
+                  {
+                  	hrs = '0'+hrs;
+
+                  }
+                   if (min < 10)
+                  {
+                  	min = '0'+min;
+
+                  }
+                   if (sec < 10)
+                  {
+                  	sec = '0'+sec;
+
+                  }
+                  document.getElementById('d01').innerHTML=hrs+':'+min+':'+sec;
+
+
+		}
+	</script>
+<div id="d01" style="background-color: black; color: lightblue;">
+
+</div>
+</body>
+</html>
