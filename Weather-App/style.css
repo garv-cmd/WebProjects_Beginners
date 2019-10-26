@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#b01 {
+height:100vh;
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items:center;
+background: linear-gradient(rgb(77,90,143),rgb(38,78,170));
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: antiquewhite;
+}
+.location,.temperature
+{
+    height:30vh;
+    width:50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.temperature
+{
+    flex-direction:column;
+}
+.degree-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.degree-section span{
+margin:8px;
+font-size: 20px;
+}
+h2{
+    font-size: 40px;
+}
